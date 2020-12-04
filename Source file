@@ -1,12 +1,16 @@
+//Editor: This code was writen by STEM Club members of Jakande Estate Comprehensive Snr College
+//Purpose: This code supports the smart walker solution developed to help the blind people navigate their ways and live a safe and healthy lives.
+// Team Members: Alabi Abeedah, Josephine Morolari, Ojeih Chiamaka and managed by Mr Soji Megbowon (Mentor)
+
 #define trigPin 13
 #define echoPin 12
-#define motor 7
+#define vibrator 7
 #define buzzer 6
 
 void setup()
-{ pinMode(trigPin, OUTPUT);
-pinMode(echoPin, INPUT);
-pinMode(motor, OUTPUT);
+{ pinMode(trigPin, OUTPUT); // Set it as an ouput
+pinMode(echoPin, INPUT); // Sets it as an input
+pinMode(vibrator, OUTPUT); //
 pinMode(buzzer,OUTPUT);
 }
 
@@ -23,11 +27,11 @@ distance = (duration/2) / 29.1;
 
 if (distance < 70) // Checking the distance, you can change the value
 { 
-digitalWrite(motor,HIGH); // When the the distance below 100cm
+digitalWrite(vibrator,HIGH); // When the the distance below 100cm
 digitalWrite(buzzer,HIGH);
 } else
 {
-digitalWrite(motor,LOW);// when greater than 100cm
+digitalWrite(vibrator,LOW);// when greater than 100cm
 digitalWrite(buzzer,LOW); 
 } delay(500);
 }
