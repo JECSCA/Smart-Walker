@@ -1,6 +1,6 @@
 //Editor: This code was writen by STEM Club members of Jakande Estate Comprehensive Snr College
 //Purpose: This code supports the smart walker solution developed to help the blind people navigate their ways and live a safe and healthy lives.
-// Team Members: Alabi Abeedah, Josephine Morolari, Ojeih Chiamaka and managed by Mr Soji Megbowon (Mentor)
+// Team Members: Alabi Abeedah, Josephine Morolari, Ojeih Chiamaka and supported by Mr Soji Megbowon (Mentor)
 
 #define trigPin 13
 #define echoPin 12
